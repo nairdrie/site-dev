@@ -1,0 +1,23 @@
+<!doctype HTML>
+<head>
+<link rel="stylesheet" type="text/css" href="snake/css/snake.css">
+<title>Snake</title>
+</head>
+<body>
+	<form method="POST" action="scores.php" id="scoreform">
+		<input id="name" type="text" name="name" value="Enter your name">
+		<input type="hidden" id="hiddenscore" name="score" value="0">
+	</form>
+	<div class="centered">
+    <h1>Snake</h1>
+	<p style="">
+    Score: <span id="score">0</span>
+    </p>
+	<input id="name" type="text" name="name" value="Enter your name">
+	<button id="reset" class='button -regular center' type="submit" onclick="passScore()">Play Again</button>
+    <canvas id="myCanvas" width="600px" height="600px"style="border:5px solid #000;"></canvas>
+	<h5>&copy 2017 by Nick Airdrie </h5>
+</div>
+    <script type="text/javascript" src="snake/js/snake.js">
+    </script>
+</body>
